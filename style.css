@@ -28,8 +28,8 @@ nav a {
     border-radius: 8px;
 
     /* Estas líneas son nuevas */
-    opacity: 0;                 /* Empieza invisible */
-    transform: translateY(30px);/* Empieza un poco abajo */
+    opacity: 1;                 /* Empieza invisible */
+    transform: translateY(0);/* Empieza un poco abajo */
     transition: all 0.8s ease;  /* Movimiento suave */
 }
 
@@ -51,4 +51,5 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
 
