@@ -29,8 +29,20 @@ nav a {
 
     /* Estas líneas son nuevas */
     opacity: 0;                 /* Empieza invisible */
-    transform: translateY(0);/* Empieza un poco abajo */
-    transition: all 0.8s ease;  /* Movimiento suave */
+    transform: translateY(40px);/* Empieza un poco abajo */
+    transition: opacity 1s ease, transform 1s ease;  /* Movimiento suave */
+}
+
+/* Estado visible */
+.seccion.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Primera sección siempre visible */
+.seccion:first-of-type {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -51,6 +63,7 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
 
 
 
