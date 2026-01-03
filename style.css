@@ -80,6 +80,13 @@ footer {
     padding: 15px;
 }
 
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 /* Animación de texto */
 @keyframes textoEntrada {
     from {
@@ -140,5 +147,29 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .seccion {
+        padding: 30px 15px;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
 
 
