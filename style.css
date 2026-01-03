@@ -64,6 +64,22 @@ footer {
     padding: 15px;
 }
 
+/* Animación de texto */
+@keyframes textoEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2 {
+    animation: textoEntrada 1s ease forwards;
+}
+
 
 
 
