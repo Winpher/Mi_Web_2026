@@ -18,28 +18,38 @@
 </header>
 
 <section id="inicio" class="seccion">
-    <h2>Bienvenido</h2>
-    <p>Este sitio web es completamente funcional.</p>
-    <button onclick="mostrarMensaje()">Probar función</button>
+    <h2>Soluciones digitales para tu negocio</h2>
+    <p>
+        Ayudo a personas y pequeños negocios a tener presencia profesional en Internet,
+        con páginas web modernas, rápidas y funcionales.
+    </p>
+    <button onclick="window.location.href='#contacto'">
+        Solicitar información
+    </button>
 </section>
 
 <section id="servicios" class="seccion">
     <h2>Servicios</h2>
     <ul>
-        <li>Diseño web</li>
-        <li>Programación</li>
-        <li>Soporte técnico</li>
+        <li>Diseño y desarrollo de páginas web</li>
+        <li>Páginas de negocio y landing pages</li>
+        <li>Integración con WhatsApp</li>
+        <li>Soporte y mejoras continuas</li>
     </ul>
 </section>
 
 <section id="contacto" class="seccion">
     <h2>Contacto</h2>
+    <p>
+        Escríbeme directamente y cuéntame qué necesitas.
+        Te responderé lo antes posible.
+    </p>
 
     <form id="formulario">
         <input type="text" id="nombre" placeholder="Tu nombre" required>
         <input type="email" id="email" placeholder="Tu correo" required>
-        <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
-        <button type="submit">Enviar</button>
+        <textarea id="mensaje" placeholder="Describe tu proyecto" required></textarea>
+        <button type="submit">Enviar por WhatsApp</button>
     </form>
 
     <p id="resultado"></p>
