@@ -16,3 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarSecciones();
     window.addEventListener("scroll", mostrarSecciones);
 });
+function enviarWhatsApp(e) {
+    e.preventDefault();
+
+    let nombre = document.getElementById("nombre").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    let telefono = "593XXXXXXXXX"; // TU NÚMERO CON CÓDIGO DE ECUADOR
+    let texto = `Hola, soy ${nombre}. ${mensaje}`;
+
+    let url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
+    window.open(url, "_blank");
+}
+
