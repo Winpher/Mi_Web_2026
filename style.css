@@ -26,7 +26,13 @@ nav a {
     background: white;
     margin: 20px;
     border-radius: 8px;
+
+    /* Estas líneas son nuevas */
+    opacity: 0;                 /* Empieza invisible */
+    transform: translateY(30px);/* Empieza un poco abajo */
+    transition: all 0.8s ease;  /* Movimiento suave */
 }
+
 
 button {
     padding: 10px 20px;
@@ -45,3 +51,4 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
