@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mi Sitio Web</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="inicio" class="seccion">
+    <h2>Bienvenido</h2>
+    <p>Este sitio web es completamente funcional.</p>
+    <button onclick="mostrarMensaje()">Probar función</button>
+</section>
+
+<section id="servicios" class="seccion">
+    <h2>Servicios</h2>
+    <ul>
+        <li>Diseño web</li>
+        <li>Programación</li>
+        <li>Soporte técnico</li>
+    </ul>
+</section>
+
+<section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+        <input type="email" id="email" placeholder="Tu correo" required>
+        <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resultado"></p>
+</section>
+
+<footer>
+    <p>© 2026 - Mi Sitio Web</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
