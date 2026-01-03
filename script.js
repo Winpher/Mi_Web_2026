@@ -1,25 +1,20 @@
-document.getElementById("formulario").addEventListener("submit", function(e) {
-    e.preventDefault();
+// Mostrar secciones al cargar y al hacer scroll
+document.addEventListener("DOMContentLoaded", () => {
+    const secciones = document.querySelectorAll(".seccion");
 
-    const nombre = document.getElementById("nombre").value;
-    const email = document.getElementById("email").value;
-    const mensaje = document.getElementById("mensaje").value;
+    const mostrarSecciones = () => {
+        const trigger = window.innerHeight * 0.85;
 
-    if (nombre && email && mensaje) {
+        secciones.forEach(seccion => {
+            const top = seccion.getBoundingClientRect().top;
 
-        const telefono = "593939274564"; // ← TU NÚMERO AQUÍ
+            if (top < trigger) {
+                seccion.style.opacity = "1";
+                seccion.style.transform = "translateY(0)";
+            }
+        });
+    };
 
-        const texto = `Hola, soy ${nombre}.
-Mi correo es: ${email}.
-Mensaje: ${mensaje}`;
-
-        const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
-
-        window.open(url, "_blank");
-
-        document.getElementById("resultado").innerText =
-            "Redirigiendo a WhatsApp...";
-        
-        this.reset();
-    }
+    mostrarSecciones();
+    window.addEventListener("scroll", mostrarSecciones);
 });
