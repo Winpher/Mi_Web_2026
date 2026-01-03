@@ -45,11 +45,27 @@ nav a {
     transform: translateY(0);
 }
 
-
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
 
 form input, form textarea {
     width: 100%;
@@ -78,6 +94,10 @@ footer {
 
 h1, h2 {
     animation: textoEntrada 1s ease forwards;
+}
+
+header {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 
